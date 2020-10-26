@@ -1,0 +1,19 @@
+.btn{
+    position: relative;
+    padding:1rem 0px;
+    font-weight: bold;
+    &-dark, &-light{
+        background: none !important;
+        border: none !important;
+    }
+    &::after{
+        content: '';
+        height: 3px;
+        width: 40px;
+        background: $gold;
+        display: block;
+        position: absolute;
+        right: -50px;
+        top: 50%;
+    }
+}
