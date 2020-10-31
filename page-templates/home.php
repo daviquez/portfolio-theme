@@ -21,49 +21,53 @@
     </div>
 </div>
 
-<div class="col-8 p-5">
+<div class="col-8 p-5 right">
     <div class="the_content">
         <div class="row">
             <div class="col-12">
                 <h2 class="font-weight-bold my-5"><?php _e('Summary', 'david');?></h2>
                 <p class="my-5">
-                    <?php _e('Web developer, what they call a full-stack, from Costa Rica. I have studied in the other side of the world, represented Costa Rica worldwide in the biggest technical olympics and created alliances with some of the best developer of many countries. In addition to sharing my knowledge to other students and teachers through trainings in order to improve the web development in my country.', 'david')?>
+                    <?php _e('Web Developer with experience in functional websites and web apps as well. Representer of Costa Rica in the international WorldSkills competitions in the area of web technologies. My knowledge includes responsive design, UI, UX and accessibility.', 'david')?>
                 </p>
                 <a href="<?php echo site_url('/about', ''); ?>" class="btn font-weight-bold mb-5"><?php _e('READ MORE', 'david'); ?></a>
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-2">
-                <p><span id="section-number">01</span> <span class="dash">-</span> 02</p>
+            <div class="col-2 pt-5">
+                <p class="pt-5"><span id="section-number">01</span> <span class="dash">-</span> 02</p>
             </div>
             <div id="home_resume" class="col-10">
                 <section class="skills">
-                    <h2 class="font-weight-bold"><?php _e('Skills', 'david');?></h2>
-                    <ul class="ul-gold">
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>WordPress</li>
-                        <li>React</li>
-                        <li>Vue.js</li>
-                        <li>Laravel</li>
-                    </ul>
+                    <h2 class="font-weight-bold mb-4"><?php _e('Skills', 'david');?></h2>
+                    <div class="d-flex mb-4">
+                        <ul class="ul-gold">
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>WordPress</li>
+                        </ul>
+                        <ul class="ml-3 ul-gold">
+                            <li>React</li>
+                            <li>Vue.js</li>
+                            <li>Laravel</li>
+                        </ul>
+                    </div>
                     <a href="<?php site_url('/works', ''); ?>" class="btn"><?php _e('CHECK MY WORK', 'david') ?></a>
                 </section>
-                <section class="experience">
+                <section class="experience d-none">
                     <h2 class="font-weight-bold"><?php _e('Experience', 'david');?></h2>
                     <div class="d-flex justify-content-start">
                         <ul class="mt-4">
                             <li>
-                                <p class="text-bold mb-0">Broccoli Studios</p>
-                                <p class="text-gold">Web Programmer</p>
+                                <h5 class="text-bold mb-0">Broccoli Studios</h5>
+                                <p class="text-gold"><?php _e('Web Programmer', 'david') ?></p>
                             </li>
                             <li>
-                                <p class="text-bold mb-0">Broccoli Studios</p>
-                                <p class="text-gold">Web Programmer</p>
+                                <h5 class="text-bold mb-0">Accenture</h5>
+                                <p class="text-gold"><?php _e('Training', 'david') ?></p>
                             </li>
                             <li>
-                                <p class="text-bold mb-0">Broccoli Studios</p>
-                                <p class="text-gold">Web Programmer</p>
+                                <h5 class="text-bold mb-0">Freelance</h5>
+                                <p class="text-gold"><?php _e('WordPress Specialist', 'david') ?></p>
                             </li>
                         </ul>
                         <ul class="ml-5">

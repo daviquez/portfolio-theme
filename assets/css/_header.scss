@@ -19,6 +19,13 @@ header{
     margin-bottom: 0;
     z-index: 100;
     cursor: pointer;
+    transition: .5s;
+    transition-delay: .4s;
+    
+    &.active{
+        transform: rotate(90deg);
+    }
+
     span{
         background: white;
         width: 100%;

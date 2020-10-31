@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.87 31.22">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.93 20.45">
   <defs>
     <style>
       .cls-1 {
-        font-size: 27.71px;
         fill: #4d4d4d;
-        font-family: Roboto-Bold, Roboto;
-        font-weight: 700;
       }
     </style>
   </defs>
   <title>linkedin</title>
   <g id="Layer_2" data-name="Layer 2">
     <g id="Contact">
-      <text class="cls-1" transform="translate(0 23.71)">in</text>
+      <g>
+        <path class="cls-1" d="M0,2A1.92,1.92,0,0,1,.59.57,2.21,2.21,0,0,1,2.19,0a2.22,2.22,0,0,1,1.6.57A1.92,1.92,0,0,1,4.38,2a1.92,1.92,0,0,1-.6,1.46A2.22,2.22,0,0,1,2.19,4,2.22,2.22,0,0,1,.6,3.48,1.92,1.92,0,0,1,0,2ZM4.16,20.45H.23V5.81H4.16Z"/>
+        <path class="cls-1" d="M11,5.81,11.1,7.5a5.11,5.11,0,0,1,4.21-2A4.25,4.25,0,0,1,18.77,6.9,6.38,6.38,0,0,1,19.93,11v9.46H16V11.08a2.54,2.54,0,0,0-.54-1.81,2.43,2.43,0,0,0-1.8-.56,2.69,2.69,0,0,0-2.48,1.41V20.45H7.29V5.81Z"/>
+      </g>
     </g>
   </g>
 </svg>

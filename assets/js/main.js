@@ -10,6 +10,7 @@ var about = document.getElementById('about')
 h_menu.addEventListener('click', function(){
 
     burger.classList.toggle('dark')
+    burger.classList.toggle('active')
     menu.classList.toggle('show')
 
     if(h_menu.checked){
@@ -42,17 +43,22 @@ var scrollableElement = document.body; //document.getElementById('scrollableElem
 
 scrollableElement.addEventListener('wheel', checkScrollDirection);
 
+
 function checkScrollDirection(event) {
   if (checkScrollDirectionIsUp(event)) {
     console.log('up')
-    skills.classList.remove('d-none')
-    experience.classList.add('d-none')
-    section_number.textContent = '01'
+    if(skills){
+      skills.classList.remove('d-none')
+      experience.classList.add('d-none')
+      section_number.textContent = '01'
+    }
 } else {
     console.log('down')
-    skills.classList.add('d-none')
-    experience.classList.remove('d-none')
-    section_number.textContent = '02'
+    if(experience){
+      skills.classList.add('d-none')
+      experience.classList.remove('d-none')
+      section_number.textContent = '02'
+    }
   }
 }
 

@@ -167,6 +167,15 @@ header {
   margin-bottom: 0;
   z-index: 100;
   cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+#burger.active {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 #burger span {
@@ -326,9 +335,12 @@ body.page-template-about #menu .content {
 }
 
 /* //CONTENT */
+/* GRIDS */
 footer {
   position: absolute;
   bottom: 0;
   z-index: 999;
 }
+
+/* Animations */
 /*# sourceMappingURL=style.css.map */
