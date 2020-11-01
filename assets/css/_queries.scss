@@ -1,0 +1,97 @@
+@media screen and (min-width: 768px){
+    #the_dark{
+        max-width: 600px;
+    }
+} 
+@media screen and (max-width: 768px){
+    html{
+        &.menu-collapse{
+            overflow-y: hidden;
+        }
+    }
+    header{
+        top: 25px;
+    }
+    /* burguer */
+    #burger{
+        &.dark{
+            span{
+                background: white !important;
+            }
+            &::after, &::before{
+                background: white !important;
+            }
+        }
+        &.light{
+            span{
+                background: white !important;
+            }
+            &::after, &::before{
+                background: white !important;
+            }
+        }
+    }
+    #menu{
+        left: 0;
+        top: -100%;
+        &.show{
+            top: 0;
+            .content::before{
+                width: 70%;
+                // transition-duration: .5s;
+                // transition-delay: .5s;
+            }
+        }
+        .container{
+            padding-top: 130px;
+        }
+        .content{
+            width: unset;
+            left: 0;
+            width: 100%;
+            &::before {
+                width: 0%;
+                left: 50%;
+                top: 1px;
+                height: 1px !important;
+                transform: translateX(-50%);
+            }
+            nav{
+                width: 100%;
+                text-align: center;
+                li{
+                    padding: 0;
+                    a{
+                        padding: 15px 0;
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .main-menu{
+            ul{
+                padding-left: 0;
+            }
+        }
+    }
+    #about{
+        .list-gold li::before {
+            display: none;
+        }
+    }
+    /* //burguer */
+    body{
+        overflow-x: hidden;
+    }
+    /* scrolls */
+    #home_resume{
+        max-height: unset;
+    }
+    /* //scrolls */
+    footer{
+        position: relative;
+    }
+    
+} 
