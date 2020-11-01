@@ -1,7 +1,18 @@
 .btn{
     position: relative;
-    padding:1rem 0px;
+    padding:1rem 70px 1rem 0px;
     font-weight: bold;
+    transition: .5s;
+    &:hover{
+        &::after{
+            width: 7px;
+            height: 7px;
+            top: 45%;
+            right: 0;
+            border-radius: 50px;
+            animation: blink 2s infinite;
+        }
+    }
     &-dark, &-light{
         background: none !important;
         border: none !important;
@@ -13,7 +24,8 @@
         background: $gold;
         display: block;
         position: absolute;
-        right: -50px;
-        top: 50%;
+        right: 0;
+        top: 48%;
+        transition: .5s;
     }
 }

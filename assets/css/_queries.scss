@@ -1,6 +1,12 @@
 @media screen and (min-width: 768px){
-    #the_dark{
-        max-width: 600px;
+    body:not(.page-template-about){
+        #the_dark{
+            max-width: 600px;
+        }
+    }
+    .the_content{
+        width: 100%;
+        max-width: 80%;
     }
 } 
 @media screen and (max-width: 768px){
@@ -34,6 +40,7 @@
     #menu{
         left: 0;
         top: -100%;
+        align-items: flex-end;
         &.show{
             top: 0;
             .content::before{
@@ -43,7 +50,7 @@
             }
         }
         .container{
-            padding-top: 130px;
+            padding-bottom: 40px;
         }
         .content{
             width: unset;
@@ -52,7 +59,7 @@
             &::before {
                 width: 0%;
                 left: 50%;
-                top: 1px;
+                top: -10%;
                 height: 1px !important;
                 transform: translateX(-50%);
             }
@@ -76,6 +83,12 @@
             }
         }
     }
+    body.page-template-about{
+        #menu{
+            align-items: center;
+            right: 0 !important;
+        }
+    }
     #about{
         .list-gold li::before {
             display: none;
@@ -85,8 +98,14 @@
     body{
         overflow-x: hidden;
     }
+    #the_dark{
+        min-height: 100px;
+    }
     /* scrolls */
     #home_resume{
+        max-height: unset;
+    }
+    #about_resume{
         max-height: unset;
     }
     /* //scrolls */
@@ -95,3 +114,11 @@
     }
     
 } 
+@media screen and (max-width: 575px){
+    h2{
+        font-size: 45px;
+    }
+    #card-posts .card-deck .card{
+        width: 100%;
+    }
+}

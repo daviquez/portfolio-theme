@@ -29,7 +29,7 @@
                 <p class="my-5">
                     <?php _e('Web Developer with experience in functional websites and web apps as well. Representer of Costa Rica in the international WorldSkills competitions in the area of web technologies. My knowledge includes responsive design, UI, UX and accessibility.', 'david')?>
                 </p>
-                <a href="<?php echo site_url('/about', ''); ?>" class="btn font-weight-bold mb-5"><?php _e('READ MORE', 'david'); ?></a>
+                <a href="<?php echo site_url('/about', ''); ?>" class="btn font-weight-bold mb-0 mb-md-5"><?php _e('READ MORE', 'david'); ?></a>
             </div>
         </div>
         <div class="row mt-5">
@@ -37,7 +37,7 @@
                 <p class="pt-5"><span id="section-number">01</span> <span class="dash">-</span> 02</p>
             </div>
             <div id="home_resume" class="col-12 col-md-10 scroll-snap-y">
-                <section class="skills mb-0">
+                <section class="skills mb-2">
                     <h2 class="font-weight-bold mb-4"><?php _e('Skills', 'david');?></h2>
                     <div class="d-flex mb-4">
                         <ul class="ul-gold">
@@ -51,7 +51,7 @@
                             <li>Laravel</li>
                         </ul>
                     </div>
-                    <a href="<?php site_url('/works', ''); ?>" class="btn"><?php _e('CHECK MY WORK', 'david') ?></a>
+                    <a href="<?php site_url('/works', ''); ?>" class="btn mb-5 mb-md-0"><?php _e('CHECK MY WORK', 'david') ?></a>
                 </section>
                 <section class="experience">
                     <h2 class="font-weight-bold"><?php _e('Experience', 'david');?></h2>

@@ -19,7 +19,7 @@ h_menu.addEventListener('click', function(){
     if(h_menu.checked){
       html.classList.add('menu-collapse')
         if(greet){
-          greet.textContent = ' '
+          greet.textContent = '\b'
         }
         if(about){
           about.innerHTML = `
