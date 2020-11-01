@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth !important;
     -webkit-transition: .5s !important;
     transition: .5s !important;
+    scrollbar-width: thin;
 }
 body{
     font-family: 'Roboto' Arial, Helvetica, sans-serif !important;
@@ -39,6 +40,17 @@ p{
 .z-99{
     position: relative;
     z-index: 99;
+}
+body::-moz-scrollbar{
+    width: 10px;
+}
+body::-moz-scrollbar-track{
+    background: gray;
+    border: none;
+    outline: none;
+}
+body::-moz-scrollbar-thumb{
+    background: $gold;
 }
 .transition{
     transition: .5s;

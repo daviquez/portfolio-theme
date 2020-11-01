@@ -23,6 +23,7 @@ html {
   scroll-behavior: smooth !important;
   -webkit-transition: .5s !important;
   transition: .5s !important;
+  scrollbar-width: thin;
 }
 
 body {
@@ -62,6 +63,20 @@ p {
 .z-99 {
   position: relative;
   z-index: 99;
+}
+
+body::-moz-scrollbar {
+  width: 10px;
+}
+
+body::-moz-scrollbar-track {
+  background: gray;
+  border: none;
+  outline: none;
+}
+
+body::-moz-scrollbar-thumb {
+  background: #ffc145;
 }
 
 .transition {
@@ -217,10 +232,38 @@ main {
 
 .the_content {
   width: 80%;
+  margin: 0 auto;
 }
 
 .dash {
   width: 40px;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  max-height: 100vh;
+  background: white;
+}
+
+.scroll-y .the_content {
+  position: relative;
+  z-index: 99;
+}
+
+.scroll-snap-y {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.scroll-snap-y ::-webkit-scrollbar {
+  display: none !important;
+}
+
+.scroll-snap-y > section {
+  scroll-snap-align: start;
 }
 
 #menu {
@@ -231,7 +274,7 @@ main {
   color: white;
   top: 0;
   left: -150%;
-  z-index: 1;
+  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,6 +364,10 @@ main {
   }
 }
 
+#the_dark {
+  max-width: 600px;
+}
+
 body.page-template-about #menu {
   left: unset;
   right: -150% !important;
@@ -334,10 +381,91 @@ body.page-template-about #menu .content {
   left: 0 !important;
 }
 
+#home_resume {
+  height: 100%;
+  max-height: 265px;
+}
+
+#about_resume {
+  height: 100%;
+  max-height: 680px;
+}
+
+/* Works */
+#card-posts.card-deck {
+  gap: 30px;
+}
+
+#card-posts.card-deck .card {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+  margin: 0;
+  display: block;
+  width: calc(50% - 30px);
+}
+
+body.page-template-works .card-deck {
+  position: relative;
+  background: white;
+  z-index: 1;
+}
+
+body.page-template-works footer {
+  z-index: unset;
+}
+
 /* //CONTENT */
 /* GRIDS */
+/* FORMS */
+.david-form label {
+  margin-left: 10px;
+}
+
+.david-form input:not([type='submit']), .david-form textarea {
+  border: none;
+  border-bottom: 1px solid #232323;
+  border-radius: 0px;
+}
+
+.david-form .form-control::-webkit-input-placeholder {
+  color: gray;
+}
+
+.david-form .form-control:-ms-input-placeholder {
+  color: gray;
+}
+
+.david-form .form-control::-ms-input-placeholder {
+  color: gray;
+}
+
+.david-form .form-control::placeholder {
+  color: gray;
+}
+
+.david-form .form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 167, 0, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(255, 167, 0, 0.25);
+}
+
+.david-form label[for="david-contact__name"]::after, .david-form label[for="your-email"]::after {
+  content: '*';
+  display: inline;
+  color: #ffc145;
+  font-weight: bold;
+}
+
+.david-form input[type='submit']::after {
+  content: 'test';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #ffc145;
+}
+
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   z-index: 999;
 }

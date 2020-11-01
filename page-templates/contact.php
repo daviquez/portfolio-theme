@@ -10,12 +10,13 @@
 
 ?>
 
-<div class="z-99 col-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
+<div id="the_dark" class="z-99 col-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
     <div class="pl-4 ml-4">
         <p id="greet" class="mb-0"><?php _e('Hello, I am', 'david'); ?></p>
         <h1 class="font-weight-bold"><?php _e('David Víquez', 'david'); ?></h1>
         <div id="about" class="transition">
             <p><?php _e('and this is my online portfolio', 'david'); ?></p>
+            <a href="<?php echo site_url('/about', ''); ?>" class="btn btn-dark"><?php _e('Know more about me', 'david'); ?></a>
         </div>
         <div class="signature mt-5">
             <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/img/signature.svg" alt="david signature" width="120">
@@ -47,7 +48,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <h5 class="text-bold mb-3"><?php _e('Mail', 'david') ?></h5>
-                <div class="d-flex justify-content-between align-items-center pt-2">
+                <div class="david-icons d-flex justify-content-between align-items-center pt-2">
                     <div>
                         <a href="https://www.t.me/IamDH" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/assets/img/telegram.svg" alt="icono de Telegram" class="img-fluid" width="25"></a>
                     </div>
@@ -64,7 +65,12 @@
             </div>
         </div>
         <div class="row mt-5">
-            <h3 class="text-bold"><?php _e('Or just send me an email', 'david')?></h3>
+            <div class="col-12">
+                <h3 class="text-bold"><?php _e('Or just send me an email', 'david')?></h3>
+                <div class="mt-5 david-form">
+                    <?php echo do_shortcode('[contact-form-7 id="137" title="Contact Form"]') ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
