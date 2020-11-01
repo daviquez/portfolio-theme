@@ -7,7 +7,7 @@
     get_header('light');
 ?>
 
-<div class="col-8 p-5">
+<div class="order-1 order-md-0 col-12 col-md-8 p-5">
     <div class="the_content">
         <div class="row">
             <div class="col-12">
@@ -47,7 +47,7 @@
     </div>
 </div>
 
-<div id="the_dark" class="col-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
+<div id="the_dark" class="order-0 order-md-1 col-12 col-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
     <div class="globe">
 
     </div>

@@ -1,5 +1,6 @@
 var $ = jQuery
 
+var html = document.getElementsByTagName('html')[0]
 var body = document.getElementsByTagName('body')[0]
 
 var h_menu = document.getElementById('h-menu')
@@ -16,6 +17,7 @@ h_menu.addEventListener('click', function(){
     menu.classList.toggle('show')
 
     if(h_menu.checked){
+      html.classList.add('menu-collapse')
         if(greet){
           greet.textContent = ' '
         }
@@ -30,7 +32,8 @@ h_menu.addEventListener('click', function(){
             </div>
           `
         }
-    }else{
+      }else{
+        html.classList.remove('menu-collapse')
         if(greet){
           greet.textContent = 'Hello, I am'
         }
