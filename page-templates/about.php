@@ -11,15 +11,15 @@
     <div class="the_content">
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-bold my-2 my-md-5"><?php _e('Summary', 'david');?></h2>
+                <h2 class="font-weight-bold my-2 my-lg-5"><?php _e('Summary', 'david');?></h2>
             </div>
         </div>
-        <div class="row mt-md-4">
+        <div class="row mt-lg-4">
             <div class="col-2 pt-4">
-            <p class="d-none"><span id="section-number">01</span> <span class="dash">-</span> 03</p>
+            <p class="d-none d-lg-block"><span id="section-number">01</span> <span class="dash">-</span> 03</p>
             </div>
-            <div id="about_resume" class="col-12 col-md-9 scroll-snap-y">
-                <section class="hellow mb-5 mb-md-4">
+            <div id="about_resume" class="col-12 col-lg-9 scroll-snap-y">
+                <section class="hellow mb-5 mb-lg-4">
                     <p><?php _e('Mi name is David; I am a web developer from Costa Rica. My creation skills go from front-end to back-end, in other words, what it is popularly known as a full-stack developer. Mi path as a web developer started in the high school, where I studied advertising design. There was a project about design a web site and throught the process of that project I used to wonder how is it possible to transfer my design to an actual web site. So, as soon as I graduated from high school I searched the way to learn how to design websites and I found that there was a course about it the National Vocational Institute, so I joined it.', 'david') ?></p>
                     <p><?php _e('A couple of years later, while I was in my internship process, a teacher contact me saying that because of my grades and attitude my profile fit with the Web design and development competitions from the institute, so I decided to join them with absolutely no idea about the huge change that it will have in my live.', 'david') ?></p>
                     <p><?php _e('As a summary, I qualified in order to take part in the national competitions which were supervised by korean experts. I won the gold medal, which gave me the opportunity to study abroad, represent Costa Rica worldwide in WorldSkills competitions and create alliances with some of the best developers from many countries.', 'david') ?></p>
@@ -37,7 +37,7 @@
                 <section class="russia my-md-5 pb-md-5">
                     <h2 class="font-weight-bold"><?php _e('Russia', 'david');?></h2>
                     <h3 class="text-gold"><?php _e('WorldSkills, Kazan 2019', 'david');?></h3>
-                    <p class="my-md-5 mt-4 pt-3 pb-md-5"><?php _e('In this case, I represented Costa Rica in the skill of Web Technologies. This competition took 4 days long in which all kind of tests about web development were applied. These tests consisted in speed challenges, web site designs, web site building, CMS, plugins and functions creating, theme developing, web apps, APIs creation and more. All that focused in giving solutions to projects using the best practices and the most demanded technologies worldwide. In addition, I had the opportunity to cooperate with competitors from other countries As a summary, I qualified in order to take part in the national competitions which', 'david') ?></p>
+                    <p class="my-md-5 mt-4 pt-3 pb-lg-5"><?php _e('In this case, I represented Costa Rica in the skill of Web Technologies. This competition took 4 days long in which all kind of tests about web development were applied. These tests consisted in speed challenges, web site designs, web site building, CMS, plugins and functions creating, theme developing, web apps, APIs creation and more. All that focused in giving solutions to projects using the best practices and the most demanded technologies worldwide. In addition, I had the opportunity to cooperate with competitors from other countries As a summary, I qualified in order to take part in the national competitions which', 'david') ?></p>
                     <div class="mt-md-5 pb-md-5">
                         <a href="" class="btn text-bold"><?php _e('LEARN MORE ABOUT WORLDSKILLS', 'david') ?></a>
                     </div>
@@ -47,9 +47,12 @@
     </div>
 </div>
 
-<div id="the_dark" class="order-0 order-md-1 col-12 col-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
-    <div class="globe">
-
+<div id="the_dark" class="globe-container order-0 order-md-1 col-12 col-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
+    <div id="globe" class="bg-dark globe">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/svg/dotted-world.svg" alt="Dotted World">
+        <span class="globe-dot cr"></span>
+        <span class="globe-dot kr"></span>
+        <span class="globe-dot ru"></span>
     </div>
 </div>
 

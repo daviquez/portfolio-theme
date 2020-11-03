@@ -122,6 +122,43 @@ body.page-template-about{
     // scrollbar-color: $gold gray;
 }
 
+/* Globe */
+.globe-container{
+    position: relative;
+    .globe-dot{
+        position: absolute;
+    }
+}
+#globe{
+    position: absolute;
+    left: -30%;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 900px;
+    border: 4px solid white;
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 20%, rgba(0,0,0,1) 100%);
+    }
+    img{
+        object-fit: contain;
+        position: absolute;
+        left: 15%;
+        height: 75%;
+    }
+}
+
 /* Works */
 #card-posts .card-deck{
     gap: 30px;
