@@ -10,7 +10,7 @@
 
 ?>
 
-<div id="the_dark" class="pt-4 pt-md-0 z-99 col-12 bp-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
+<div id="the_dark" class="pt-4 pt-md-0 z-99 col-12 col-md-4 bp-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
     <div class="pt-5 pt-md-0 pl-0 pl-md-4 ml-0 ml-md-4 text-center text-md-left">
         <p id="greet" class="mb-0"><?php _e('Hello, I am', 'david'); ?></p>
         <h1 class="font-weight-bold"><?php _e('David Víquez', 'david'); ?></h1>
@@ -38,16 +38,16 @@
             </div>
         </div>
         <div class="row my-4">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <h5 class="text-bold mb-4"><?php _e('Location', 'david') ?></h5>
                 <p class="pt-2">San José, Costa Rica</p>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
                 <h5 class="text-bold mb-4"><?php _e('Mail', 'david') ?></h5>
                 <a class="text-dark pt-4" href="mailto:contact@davidviquez.com" target="_blank">contact@davidviquez.com</a>
             </div>
-            <div class="col-12 col-md-4">
-                <h5 class="text-bold mb-3"><?php _e('Mail', 'david') ?></h5>
+            <div class="col-12 col-md-6 col-lg-4">
+                <h5 class="text-bold mb-3"><?php _e('Social', 'david') ?></h5>
                 <div class="david-icons d-flex justify-content-between align-items-center pt-2">
                     <div>
                         <a href="https://www.t.me/IamDH" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/assets/img/telegram.svg" alt="icono de Telegram" class="img-fluid" width="25"></a>

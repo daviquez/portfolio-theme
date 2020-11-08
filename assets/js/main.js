@@ -1,6 +1,6 @@
 var $ = jQuery
 
-var html = document.getElementsByTagName('html')[0]
+// var html = document.getElementsByTagName('html')[0]
 var body = document.getElementsByTagName('body')[0]
 
 var h_menu = document.getElementById('h-menu')
@@ -17,7 +17,7 @@ h_menu.addEventListener('click', function(){
     menu.classList.toggle('show')
 
     if(h_menu.checked){
-      html.classList.add('menu-collapse')
+      body.classList.add('menu-collapse')
         if(greet){
           greet.textContent = '\b'
         }
@@ -33,7 +33,7 @@ h_menu.addEventListener('click', function(){
           `
         }
       }else{
-        html.classList.remove('menu-collapse')
+        body.classList.remove('menu-collapse')
         if(greet){
           greet.textContent = 'Hello, I am'
         }
@@ -44,54 +44,71 @@ h_menu.addEventListener('click', function(){
     }
 });
 
-var home_change = document.getElementById('home_change')
-var about_resume = document.getElementById('about_resume')
+/**
+ * Scrolly functions
+ * 
+ */
 
-var home_resume = document.getElementById('home_resume')
-var section_number = document.getElementById('section-number')
-var skills = document.getElementsByClassName('skills')[0]
-var experience = document.getElementsByClassName('experience')[0]
+var active = true
+var position = 1
 
-// var scrollableElement = home_resume; //document.getElementById('scrollableElement');
+var scrollyNumber = document.querySelector('#scrolly-number')
+var scrollySection = document.querySelector('.scrolly')
+var globeContainer = document.querySelector('.globe-container')
+var scrollyTotal = scrollySection.childElementCount
 
-if(home_resume){
-  home_resume.addEventListener('wheel', checkScrollDirection)
-}
-if(about_resume){
-  about_resume.addEventListener('wheel', checkScrollDirection)
-}
-
-
+document.addEventListener('wheel', checkScrollDirection)
 
 function checkScrollDirection(event) {
-  if (checkScrollDirectionIsUp(event)) {
-    // console.log('up')
-    // if(skills){
-      // skills.classList.remove('d-none')
-      // experience.classList.add('d-none')
-      section_number.textContent = '01'
-    // }
-} else {
-    // console.log('down')
-    // if(experience){
-      // skills.classList.add('d-none')
-      // experience.classList.remove('d-none')
-      section_number.textContent = '02'
-    // }
+
+  if(active == true){
+    if (checkScrollDirectionIsUp(event)) {
+      position--
+      position < 1 ? position = 1 : position
+      
+      scrollyNumber.textContent = '0'+position
+    } else {
+      position++
+      position > scrollyTotal ? position = scrollyTotal : position
+
+      scrollyNumber.textContent = '0'+position
+    }
+
+    for(let i = 0; i < scrollyTotal; i++ ){
+      if( (position -1) != i){
+        scrollySection.children[i].classList.remove('show')
+        // scrollySection.children[i].classList.add('d-none')
+        if(globeContainer){
+          globeContainer.classList.remove('step-'+(i+1))
+        }
+      }else{
+        scrollySection.children[position -1].classList.add('show')
+        if(globeContainer){
+          globeContainer.classList.add('step-'+position)
+        }
+        // scrollySection.children[position -1].classList.remove('d-none')
+      }
+
+
+    }
+
+    cooldown()
   }
 }
 
-
+/**
+ * @param {Object} event - checks if scroll direction is up 
+ */
 function checkScrollDirectionIsUp(event) {
   if (event.wheelDelta) {
-    return event.wheelDelta == 1;
+    return event.wheelDelta == 1
   }
-  return event.deltaY < 0;
+  return event.deltaY < 0
 }
 
-/* 
-$(window).on("scroll", function(e){
-    console.log("only alerting once");
-    $(window).unbind("scroll");
-}); 
-*/
+function cooldown(){
+  active = false
+  setTimeout(() => {
+    active = true
+  }, 750);
+}

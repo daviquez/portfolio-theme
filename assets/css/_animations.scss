@@ -12,3 +12,16 @@
         opacity: 1;
     }
 }
+
+.fade:not(.show){
+    height: 0px;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    &.show{
+        height: unset;
+        overflow: unset;
+        margin: unset;
+        padding: unset;
+    }
+}

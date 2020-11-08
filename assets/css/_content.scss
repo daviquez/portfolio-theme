@@ -127,6 +127,49 @@ body.page-template-about{
     position: relative;
     .globe-dot{
         position: absolute;
+        height: 7px;
+        width: 7px;
+        background: $gold;
+        border-radius: 50px;
+        opacity: 0;
+        transition: .5s;
+        z-index: 1;
+        &.cr{
+            top: 56%;
+            left: 50%;
+        }
+        &.ko{
+            top: 44%;
+            left: 47%;
+        }
+        &.ru{
+            top: 35%;
+            left: 49%;
+        }
+    }
+    &.step-1{
+        #globe img{
+            left: 15%;
+        }
+        .globe-dot.cr{
+            opacity: 1;
+        }
+    }
+    &.step-2{
+        #globe img{
+            left: -75%;
+        }
+        .globe-dot.ko{
+            opacity: 1;
+        }
+    }
+    &.step-3{
+        #globe img{
+            left: -40%;
+        }
+        .globe-dot.ru{
+            opacity: 1;
+        }
     }
 }
 #globe{
@@ -156,6 +199,7 @@ body.page-template-about{
         position: absolute;
         left: 15%;
         height: 75%;
+        transition: .5s;
     }
 }
 

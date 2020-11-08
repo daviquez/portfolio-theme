@@ -32,7 +32,7 @@
 		<div class="container">
         
             <div class="row w-100">
-                <div class="col-12 col-md-4 pl-4 contact-menu d-flex flex-column align-items-start justify-content-center">
+                <div class="col-12 col-md-4 pl-4 pb-5 contact-menu d-md-flex flex-column align-items-start justify-content-center">
                     <h1 class="text-bold">David Víquez</h1>
                     <ul class="list-gold">
                         <li>San José, Costa Rica</li>
@@ -52,6 +52,6 @@
                 </div>
             </div>
         </div>
-	</section>
+    </section>
 
 	<main class="row">

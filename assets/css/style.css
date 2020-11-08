@@ -412,6 +412,53 @@ body.page-template-about #menu .content {
 
 .globe-container .globe-dot {
   position: absolute;
+  height: 7px;
+  width: 7px;
+  background: #ffc145;
+  border-radius: 50px;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 1;
+}
+
+.globe-container .globe-dot.cr {
+  top: 56%;
+  left: 50%;
+}
+
+.globe-container .globe-dot.ko {
+  top: 44%;
+  left: 47%;
+}
+
+.globe-container .globe-dot.ru {
+  top: 35%;
+  left: 49%;
+}
+
+.globe-container.step-1 #globe img {
+  left: 15%;
+}
+
+.globe-container.step-1 .globe-dot.cr {
+  opacity: 1;
+}
+
+.globe-container.step-2 #globe img {
+  left: -75%;
+}
+
+.globe-container.step-2 .globe-dot.ko {
+  opacity: 1;
+}
+
+.globe-container.step-3 #globe img {
+  left: -40%;
+}
+
+.globe-container.step-3 .globe-dot.ru {
+  opacity: 1;
 }
 
 #globe {
@@ -451,6 +498,8 @@ body.page-template-about #menu .content {
   position: absolute;
   left: 15%;
   height: 75%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 /* Works */
@@ -717,5 +766,19 @@ footer {
   100% {
     opacity: 1;
   }
+}
+
+.fade:not(.show) {
+  height: 0px;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.fade:not(.show).show {
+  height: unset;
+  overflow: unset;
+  margin: unset;
+  padding: unset;
 }
 /*# sourceMappingURL=style.css.map */

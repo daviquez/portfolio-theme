@@ -34,10 +34,10 @@
         </div>
         <div class="row mt-5">
             <div class="d-none d-md-block col-2 pt-5">
-                <p class="pt-5"><span id="section-number">01</span> <span class="dash">-</span> 02</p>
+                <p class="pt-5"><span id="scrolly-number">01</span> <span class="dash">-</span> 02</p>
             </div>
-            <div id="home_resume" class="col-12 col-md-10 scroll-snap-y">
-                <section class="skills mb-2">
+            <div id="home_resume" class="col-12 col-md-10 scrolly">
+                <section class="skills mb-2 fade show">
                     <h2 class="font-weight-bold mb-4"><?php _e('Skills', 'david');?></h2>
                     <div class="d-flex mb-4">
                         <ul class="ul-gold">
@@ -53,7 +53,7 @@
                     </div>
                     <a href="<?php site_url('/works', ''); ?>" class="btn mb-5 mb-md-0"><?php _e('CHECK MY WORK', 'david') ?></a>
                 </section>
-                <section class="experience">
+                <section class="experience fade">
                     <h2 class="font-weight-bold"><?php _e('Experience', 'david');?></h2>
                     <div class="d-lg-flex justify-content-start">
                         <ul class="mt-4 mb-0">
