@@ -9,6 +9,8 @@ header{
 .logo{
     position: relative;
     z-index: 100;
+    transition: .2s;
+    transition-delay: .3s;
 }
 #burger{
     width: 25px;

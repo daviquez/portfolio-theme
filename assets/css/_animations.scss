@@ -25,3 +25,92 @@
         padding: unset;
     }
 }
+
+.title{
+    animation: rollup 1s;
+}
+.globe, .opacity{
+    animation: show 1s;
+}
+.thumb{
+    animation: resize 1s;
+}
+.skills, .experience, .hellow, .korea, .russia{
+    &.show {
+        h2, h3, h5, .text-gold{
+            animation: rollup 1s;
+        }
+        p, li{
+            animation: show 1s;
+        }
+        .btn{
+            animation: slide 1s;
+        }
+    }
+}
+
+@keyframes rollup{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes slide{
+    0%{
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#scrolly-number{
+    &.up{
+        animation: slideDown 1s;
+    }
+    &.down{
+        animation: slideUp 1s;
+    }
+}
+
+@keyframes slideUp{
+    0%{
+        bottom: 0px;
+        position: relative;
+    }
+    100%{
+        bottom: 60px;
+    }
+}
+@keyframes slideDown{
+    0%{
+        top: 0px;
+        position: relative;
+    }
+    100%{
+        top: 60px;
+    }
+}
+@keyframes resize{
+    0%{
+        opacity: .5;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

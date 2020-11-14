@@ -3,6 +3,8 @@ var $ = jQuery
 // var html = document.getElementsByTagName('html')[0]
 var body = document.getElementsByTagName('body')[0]
 
+var logoDark = document.querySelector('#logo-dark')
+
 var h_menu = document.getElementById('h-menu')
 var burger = document.getElementById('burger')
 var menu = document.getElementById('menu')
@@ -18,12 +20,15 @@ h_menu.addEventListener('click', function(){
 
     if(h_menu.checked){
       body.classList.add('menu-collapse')
+        if(logoDark){
+          logoDark.classList.remove('dark')
+        }
         if(greet){
           greet.textContent = '\b'
         }
         if(about){
           about.innerHTML = `
-            <div class="contact-menu">
+            <div class="contact-menu opacity">
                 <ul class="list-gold">
                     <li>San José, Costa Rica</li>
                     <li>contact@davidviquez.com</li>
@@ -33,13 +38,18 @@ h_menu.addEventListener('click', function(){
           `
         }
       }else{
+        if(logoDark){
+          logoDark.classList.add('dark')
+        }
         body.classList.remove('menu-collapse')
         if(greet){
           greet.textContent = 'Hello, I am'
         }
-        if( !body.classList.contains('about') ){
-          about.innerHTML = ` <p>and this is my online portfolio</p> 
-          <a href="/davidviquez.com/about" class="btn btn-dark">Know more about me</a>`
+        if( about && !body.classList.contains('about') ){
+          about.innerHTML = ` <div class="opacity">
+          <p>and this is my online portfolio</p> 
+          <a href="/davidviquez.com/about" class="btn btn-dark">Know more about me</a>
+          </div>`
         }
     }
 });
@@ -65,15 +75,26 @@ function checkScrollDirection(event) {
 
   if(active == true){
     if (checkScrollDirectionIsUp(event)) {
+      if(position > 1){
+        scrollyNumber.classList.add('up')
+      }
+      
       position--
       position < 1 ? position = 1 : position
       
-      scrollyNumber.textContent = '0'+position
+      setTimeout(() => {
+        scrollyNumber.textContent = position
+      }, 200);
     } else {
+      if(position < scrollyTotal){
+        scrollyNumber.classList.add('down')
+      }
       position++
       position > scrollyTotal ? position = scrollyTotal : position
 
-      scrollyNumber.textContent = '0'+position
+      setTimeout(() => {
+        scrollyNumber.textContent = position
+      }, 200);
     }
 
     for(let i = 0; i < scrollyTotal; i++ ){
@@ -111,6 +132,8 @@ function checkScrollDirectionIsUp(event) {
 function cooldown(){
   active = false
   setTimeout(() => {
+    scrollyNumber.classList.remove('up')
+    scrollyNumber.classList.remove('down')
     active = true
   }, 750);
 }

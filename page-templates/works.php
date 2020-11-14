@@ -12,7 +12,7 @@
 
 <div id="the_dark" class="pt-4 pt-md-0 z-99 col-12 col-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
     <div class="pt-5 pt-md-0 pl-0 pl-md-4 ml-0 ml-md-4 text-center text-md-left">
-        <div class="position-fixed col-12">
+        <div class="position-md-fixed col-12 title">
             <h1 class="font-weight-bold"><?php _e('What do I do exactly?', 'david'); ?></h1>
             <div id="about" class="transition">
                 <p><?php _e('and this is my online portfolio', 'david'); ?></p>
@@ -25,7 +25,7 @@
     <div class="the_content container">
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-bold my-5"><?php _e('Hightlights', 'david');?></h2>
+                <h2 class="font-weight-bold my-5 title"><?php _e('Hightlights', 'david');?></h2>
             </div>
         </div>
         <div class="row mb-3">
@@ -60,14 +60,14 @@
                             <div class="card shadow mb-3 mx-0">
                                 <div class="card-img-top">
                                     <a href="<?php echo $link ?>">
-                                        <img class="img-fluid" src="<?php echo $thumbnail_url; ?>" alt="<?php echo $thumbnail_caption; ?>">
+                                        <img class="thumb img-fluid" src="<?php echo $thumbnail_url; ?>" alt="<?php echo $thumbnail_caption; ?>">
                                     </a>
                                 </div>
                                 <div class="card-body">
                                     <a class="text-dark card-text" href="<?php echo $link ?>">
                                         <h5 class="card-title text-bold"><?php echo $title; ?></h5>
                                     </a>
-                                    <p><?php esc_html_e('Technologie', 'david'); ?> <span class="text-gold"><?php echo $technologie ?></span></p>
+                                    <p><?php esc_html_e('Technologie', 'david'); ?> <span class="text-bold"><?php echo $technologie ?></span></p>
                                 </div>
                             </div>
                         <?php 

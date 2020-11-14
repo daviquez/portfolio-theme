@@ -11,7 +11,7 @@
 ?>
 
 <div id="the_dark" class="pt-4 pt-md-0 z-99 col-12 col-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
-    <div class="pt-5 pt-md-0 pl-0 pl-md-4 ml-0 ml-md-4 text-center text-md-left">
+    <div class="pt-5 pt-md-0 pl-0 pl-md-4 ml-0 ml-md-4 text-center text-md-left title opacity">
         <p id="greet" class="mb-0"><?php _e('Hello, I am', 'david'); ?></p>
         <h1 class="font-weight-bold"><?php _e('David Víquez', 'david'); ?></h1>
         <div id="about" class="transition">
@@ -25,7 +25,7 @@
     <div class="the_content container">
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-bold my-5"><?php _e('Summary', 'david');?></h2>
+                <h2 class="font-weight-bold my-5 title"><?php _e('Summary', 'david');?></h2>
                 <p class="my-5">
                     <?php _e('Web Developer with experience in functional websites and web apps as well. Representer of Costa Rica in the international WorldSkills competitions in the area of web technologies. My knowledge includes responsive design, UI, UX and accessibility.', 'david')?>
                 </p>
@@ -33,8 +33,8 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="d-none d-md-block col-2 pt-5">
-                <p class="pt-5"><span id="scrolly-number">01</span> <span class="dash">-</span> 02</p>
+            <div class="d-none d-lg-block col-2 pt-5">
+                <p class="mt-5 counter">0<span id="scrolly-number">1</span> <span class="dash"> --- </span> &nbsp;02</p>
             </div>
             <div id="home_resume" class="col-12 col-md-10 scrolly">
                 <section class="skills mb-2 fade show">

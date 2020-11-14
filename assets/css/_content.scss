@@ -121,9 +121,6 @@ body.page-template-about{
     max-height: 550px;
     // scrollbar-color: $gold gray;
 }
-#the_dark .position-fixed{
-    max-width: 450px;
-}
 /* Globe */
 .globe-container{
     position: relative;
@@ -307,4 +304,10 @@ body.page-template-works{
     transform: translateX(-50%);
     bottom: 10%;
     opacity: .5;
+}
+.counter{
+    overflow: hidden;
+}
+.dash{
+    letter-spacing: -2px;
 }

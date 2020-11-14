@@ -11,14 +11,14 @@
 ?>
 
 <div id="the_dark" class="pt-4 pt-md-0 z-99 col-12 col-md-4 bp-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
-    <div class="pt-5 pt-md-0 pl-0 pl-md-4 ml-0 ml-md-4 text-center text-md-left">
+    <div class="pt-5 pt-md-0 pl-0 pl-md-4 ml-0 ml-md-4 text-center text-md-left title">
         <p id="greet" class="mb-0"><?php _e('Hello, I am', 'david'); ?></p>
         <h1 class="font-weight-bold"><?php _e('David Víquez', 'david'); ?></h1>
         <div id="about" class="transition">
             <p><?php _e('and this is my online portfolio', 'david'); ?></p>
             <a href="<?php echo site_url('/about', ''); ?>" class="btn btn-dark"><?php _e('Know more about me', 'david'); ?></a>
         </div>
-        <div class="signature mt-5">
+        <div class="d-none d-md-block signature mt-5">
             <img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/img/signature.svg" alt="david signature" width="120">
         </div>
     </div>
@@ -28,7 +28,7 @@
     <div class="the_content">
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-bold mt-5"><?php _e('Get in touch!', 'david');?></h2>
+                <h2 class="font-weight-bold mt-5 title"><?php _e('Get in touch!', 'david');?></h2>
                 <p class="mb-1 d-none">
                     <?php _e('What do you need for your website?', 'david')?>
                 </p>
@@ -37,7 +37,7 @@
                 </p>
             </div>
         </div>
-        <div class="row my-4">
+        <div class="row my-4 opacity">
             <div class="col-12 col-md-6 col-lg-4">
                 <h5 class="text-bold mb-4"><?php _e('Location', 'david') ?></h5>
                 <p class="pt-2">San José, Costa Rica</p>
@@ -70,8 +70,8 @@
         </div>
         <div class="row mt-5">
             <div class="col-12">
-                <h3 class="text-bold"><?php _e('Or just send me an email', 'david')?></h3>
-                <div class="mt-5 david-form">
+                <h3 class="text-bold title"><?php _e('Or just send me an email', 'david')?></h3>
+                <div class="mt-5 david-form opacity">
                     <?php echo do_shortcode('[contact-form-7 id="137" title="Contact Form"]') ?>
                 </div>
             </div>

@@ -14,7 +14,7 @@
 <header class="row w-100">
 		<div class="col-12 d-flex justify-content-between align-items-center px-md-5 pt-md-4">
 			<!-- LOGO -->
-			<div class="logo">
+			<div id="logo-dark" class="logo dark">
 					<a href="<?php echo esc_url(home_url('/'))?>"><img src="<?= ROOT ?>/assets/svg/logo.svg" alt="David Viquez Logo" width="40"></a>
 			</div>
 

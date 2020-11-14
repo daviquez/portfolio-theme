@@ -11,12 +11,12 @@
     <div class="the_content">
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-bold my-2 my-lg-5"><?php _e('Hello World!', 'david');?></h2>
+                <h2 class="font-weight-bold my-2 my-lg-5 title"><?php _e('Hello World!', 'david');?></h2>
             </div>
         </div>
         <div class="row mt-lg-4">
             <div class="col-2 pt-4">
-            <p class="d-none d-lg-block"><span id="scrolly-number">01</span> <span class="dash">-</span> 03</p>
+            <p class="d-none d-lg-block counter">0<span id="scrolly-number">1</span> <span class="dash">-</span> 03</p>
             </div>
             <div id="about_resume" class="col-12 col-lg-9 scrolly">
                 <section class="hellow mb-5 m-md-0  fade show">
