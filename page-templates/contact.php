@@ -24,15 +24,15 @@
     </div>
 </div>
 
-<div class="col-12 col-md-8 p-5">
+<div class="col-12 col-md-8 px-5 pt-5 pb-0">
     <div class="the_content">
         <div class="row">
             <div class="col-12">
-                <h2 class="font-weight-bold mt-5 mb-4"><?php _e('Get in touch!', 'david');?></h2>
-                <p class="mb-1">
+                <h2 class="font-weight-bold mt-5"><?php _e('Get in touch!', 'david');?></h2>
+                <p class="mb-1 d-none">
                     <?php _e('What do you need for your website?', 'david')?>
                 </p>
-                <p class="mb-4">
+                <p class="mb-4 d-none">
                     <?php _e('Let me know it', 'david')?>
                 </p>
             </div>
@@ -58,8 +58,12 @@
                     <div>
                         <a href="https://www.linkedin.com/in/david-v%C3%ADquez-valverde-282621199/" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/assets/img/linkedin.svg" alt="icono de LinkedIn" class="img-fluid" width="25"></a>
                     </div>
-                    <div>
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/discord.svg" alt="icono de Discord" class="img-fluid" width="25">
+                    <div class="position-relative">
+                        <a id="discord-link" class="toggle-tooltip" href="https://discordapp.com/users/711640736260423742" target="_blank">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/img/discord.svg" alt="icono de Discord" class="img-fluid" width="25">
+                        </a>
+                        <span class="da-tooltip tooltip-bottom">IamDavid#4638</span>
+                        <input id="tooltip-text" type="text" value="IamDavid#4638">
                     </div>
                 </div>
             </div>
@@ -73,6 +77,7 @@
             </div>
         </div>
     </div>
+    <?= do_shortcode('[subfooter]') ?>
 </div>
 
 <?php get_footer(); ?>

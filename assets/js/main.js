@@ -55,9 +55,11 @@ var position = 1
 var scrollyNumber = document.querySelector('#scrolly-number')
 var scrollySection = document.querySelector('.scrolly')
 var globeContainer = document.querySelector('.globe-container')
-var scrollyTotal = scrollySection.childElementCount
 
-document.addEventListener('wheel', checkScrollDirection)
+if(scrollySection){
+  var scrollyTotal = scrollySection.childElementCount
+  document.addEventListener('wheel', checkScrollDirection)
+}
 
 function checkScrollDirection(event) {
 
@@ -111,4 +113,26 @@ function cooldown(){
   setTimeout(() => {
     active = true
   }, 750);
+}
+
+// Copy to clickboard
+var discordLink = document.querySelector('#discord-link')
+
+if(discordLink){
+  let tooltipText = document.querySelector('.da-tooltip.tooltip-bottom')
+  let tooltipInput = document.querySelector('#tooltip-text')
+  discordLink.addEventListener('click', function(e){
+    e.preventDefault();
+
+    tooltipInput.select()
+  
+    document.execCommand('copy')
+    
+    tooltipText.textContent = 'Copied to clipboard'
+
+    setTimeout(() => {
+      tooltipText.textContent = 'IamDavid#4638'
+    }, 2000)
+    
+  });
 }

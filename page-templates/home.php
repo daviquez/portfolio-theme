@@ -82,6 +82,7 @@
                 </section>
             </div>
         </div>
+        <?= do_shortcode('[subfooter]') ?>
     </div>
 </div>
 

@@ -121,7 +121,9 @@ body.page-template-about{
     max-height: 550px;
     // scrollbar-color: $gold gray;
 }
-
+#the_dark .position-fixed{
+    max-width: 450px;
+}
 /* Globe */
 .globe-container{
     position: relative;
@@ -239,4 +241,70 @@ body.page-template-works{
     footer{
         z-index: unset;
     }
+}
+.da-tooltip{
+    background: #4d4d4d;
+    color: white;
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    &::before{
+        content: '';
+        width: 15px;
+        height: 15px;
+        background: #4d4d4d;
+        display: block;
+        position: absolute;
+        left: calc(50% - 7px);
+        transform: translateY(-50%) rotateZ(45deg);
+        border-radius: 3px;
+        z-index:-1;
+    }
+    &:hover{
+        display: block;
+    }
+    &.tooltip-bottom{
+        bottom: -40px;
+        width: 170px;
+        text-align: center;
+        &::before{
+            content: '';
+            left: calc(50% - 7px);
+            transform: translateY(-50%) rotateZ(45deg);
+        }
+    }
+    &.tooltip-top{
+        bottom: 40px;
+        width: 170px;
+        text-align: center;
+        &::before{
+            left: calc(50% - 7px);
+            transform: translateY(100%) rotateZ(45deg);
+        }
+    }
+}
+#tooltip-text{
+    position: absolute;
+    left: -99999%;
+    top: -90000px;
+}
+.toggle-tooltip:hover ~ .da-tooltip{
+    display: block;
+}
+.subfooter{
+    width: 100%;
+    position: absolute;
+    bottom: 1rem;
+    right: 10px;
+}
+
+.signature{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    opacity: .5;
 }

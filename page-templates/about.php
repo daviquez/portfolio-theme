@@ -54,6 +54,8 @@
         <span class="globe-dot ko"></span>
         <span class="globe-dot ru"></span>
     </div>
+    
+    <?= do_shortcode('[subfooter]') ?>
 </div>
 
 

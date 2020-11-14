@@ -5,7 +5,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="David Viquez. Web Developer portfolio">
-    <meta name="theme-color" content="#1c1c1c">
+    <meta name="theme-color" content="#232323">
 	<title><?php bloginfo('name'); ?><?php if(wp_title('', false)) { echo ' | '; } ?><?php wp_title(''); ?></title>
 	<link rel="shortcut icon" type="image/jpg" href="<?= ROOT ?>/assets/img/favicon.png"/>
 </head>

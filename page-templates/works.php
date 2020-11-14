@@ -12,7 +12,7 @@
 
 <div id="the_dark" class="pt-4 pt-md-0 z-99 col-12 col-md-4 p-4 bg-dark text-white d-flex flex-column justify-content-center">
     <div class="pt-5 pt-md-0 pl-0 pl-md-4 ml-0 ml-md-4 text-center text-md-left">
-        <div class="col-12">
+        <div class="position-fixed col-12">
             <h1 class="font-weight-bold"><?php _e('What do I do exactly?', 'david'); ?></h1>
             <div id="about" class="transition">
                 <p><?php _e('and this is my online portfolio', 'david'); ?></p>
@@ -28,8 +28,8 @@
                 <h2 class="font-weight-bold my-5"><?php _e('Hightlights', 'david');?></h2>
             </div>
         </div>
-        <div class="row pb-md-5">
-            <div id="card-posts" class="col-12 pb-md-5">
+        <div class="row mb-3">
+            <div id="card-posts" class="col-12">
 
                 <?php 
                     $args = array(
@@ -86,6 +86,7 @@
             </div>
         </div>
     </div>
+    <?= do_shortcode('[subfooter]') ?>
 </div>
 
 <?php get_footer(); ?>
