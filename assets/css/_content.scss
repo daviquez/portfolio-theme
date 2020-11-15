@@ -311,3 +311,30 @@ body.page-template-works{
 .dash{
     letter-spacing: -2px;
 }
+
+// Slick
+.slick-arrow{
+    display: none !important;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    li{
+        margin: 0 10px;
+        height: 20px;
+        width: 20px;
+        background: none;
+        border-radius: 50px;
+        border: 3px solid white;
+        cursor: pointer;
+        filter: drop-shadow(0px 0px 1px black);
+        background: white;
+        &.slick-active{
+            background: $gold;
+        }
+        button{
+            display: none;
+        }
+    }
+}

@@ -19,20 +19,17 @@
             <p class="d-none d-lg-block counter">0<span id="scrolly-number">1</span> <span class="dash">-</span> 03</p>
             </div>
             <div id="about_resume" class="col-12 col-lg-9 scrolly">
-                <section class="hellow mb-5 m-md-0  fade show">
-                    <p><?php _e('Mi name is David; I am a web developer from Costa Rica. My creation skills go from front-end to back-end, in other words, what it is popularly known as a full-stack developer. Mi path as a web developer started in the high school, where I studied advertising design. There was a project about design a web site and throught the process of that project I used to wonder how is it possible to transfer my design to an actual web site. So, as soon as I graduated from high school I searched the way to learn how to design websites and I found that there was a course about it the National Vocational Institute, so I joined it.', 'david') ?></p>
-                    <p><?php _e('A couple of years later, while I was in my internship process, a teacher contact me saying that because of my grades and attitude my profile fit with the Web design and development competitions from the institute, so I decided to join them with absolutely no idea about the huge change that it will have in my live.', 'david') ?></p>
-                    <p><?php _e('As a summary, I qualified in order to take part in the national competitions which were supervised by korean experts. I won the gold medal, which gave me the opportunity to study abroad, represent Costa Rica worldwide in WorldSkills competitions and create alliances with some of the best developers from many countries.', 'david') ?></p>
-                    <p><?php _e('Along the time, I have expanded my knowledge in order to create web applications from scratch, always looking for the way to make more efficient solutions when it comes about resources, time and complexity.', 'david') ?></p>
-                    <p><?php _e('Mi personality is from someone who prefers to be productive or learning new stuff than let the time pass. Always trying to give the best of me in my works with simple solutions but attractive where every simple detail matters. Furthermore, fascinated by the technology, every time I search the way to improve and get new knowledge to enrich, not only my background, but the works.', 'david') ?></p>
+                <section class="hellow mb-5 m-md-0 pt-md-4 fade show">
+                    <p><?php _e('Mi name is David; I am a Web Developer with experience in functional websites and web apps as well. Representative of Costa Rica in the biggest international competitions in the area of web technologies. My knowledge includes responsive design, UI, UX and accessibility.', 'david') ?></p>
+                    <p><?php _e('I like to learn about everything is this world, to play video games, and to do digital paintings', 'david') ?></p>
+                    <p><?php _e('In 2019 decided to participate in WorldSkills competition of Costa Rica. These competitions were supervised by Koreans experts. For these competitions dealt with topics about web design and its technologies. ', 'david') ?></p>
+                    <p><?php _e('As a summary, the experts were satisfied with the results, so I achieved not only a gold medal, but also a scholarship in South Korea.', 'david') ?></p>
+                    <p><?php _e('', 'david') ?></p>
                 </section>
                 <section class="korea mb-5 m-md-0 fade">
-                    <h3 class="font-weight-bold mb-4 mb-md-0"><?php _e('WorldSkills', 'david');?></h3>
-                    <p class="mb-3 my-md-5"><?php _e('WorldSkills is a biggest movement that reflects the future of the global industry, through projects, initiatives and innovative sustainable activities connecting professionals, students and enterprises from many countries in order to improve the life quality around the world. This movement has 1 cornerstone (skills); where you can find key points like promoting technical skills, build careers, cooperation and global development and skill competition. And is this last point where I want to focus because the competition is the most popular point of this movement, which gathers hundreds from the best of the best young students from around the world to show their skills in the biggest technical competition every two years.', 'david') ?></p>
-                    <h5 class="font-weight-bold"><?php _e('Competitor', 'david');?></h5>
-                    <p class="my-4"><?php _e('This year I participated as a competitor in the skill of Design and Web Development, winning not only the gold medal, but also a scholarship in South Korea.', 'david') ?></p>
-                    <h5 class="font-weight-bold"><?php _e('Judge', 'david');?></h5>
-                    <p class="my-4"><?php _e('Also, I had the opportunity to be judge, evaluating that the projects are in a level for preparing the students to the international competitions.', 'david') ?></p>
+                    <h2 class="font-weight-bold mb-4 mb-md-0"><?php _e('Korea', 'david');?></h2>
+                    <p class="mb-3 my-md-5"><?php _e('In Korea, I had the oportunity to be thaught by one of the biggest developers in this world and his student, the korean competitor. We had to learn and train in order to copete in the international WorldSkills.', 'david') ?></p>
+                    <p class="mb-3 my-md-5"><?php _e('We had to solve some tests from the past years of the WorldSkills competitons, create tests proposals and strategies to the next competition.', 'david') ?></p>
                 </section>
                 <section class="russia fade">
                     <h2 class="font-weight-bold"><?php _e('Russia', 'david');?></h2>
@@ -55,7 +52,9 @@
         <span class="globe-dot ru"></span>
     </div>
     
-    <?= do_shortcode('[subfooter]') ?>
+    <div class="d-none d-md-block">
+        <?= do_shortcode('[subfooter]') ?>
+    </div>
 </div>
 
 

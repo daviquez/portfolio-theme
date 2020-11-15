@@ -1,4 +1,35 @@
-var $ = jQuery
+const $ = jQuery
+
+$(document).ready(function(){
+  $('#home_resume').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    fade: true,
+    adaptiveHeight: true,
+    dotsClass: 'slick-dots',
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: 'unslick',
+    }]
+  })
+  $('#about_resume').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    fade: true,
+    // adaptiveHeight: true,
+    dotsClass: 'slick-dots',
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: 'unslick',
+    }]
+  })
+})
 
 // var html = document.getElementsByTagName('html')[0]
 var body = document.getElementsByTagName('body')[0]
@@ -150,6 +181,7 @@ if(discordLink){
     tooltipInput.select()
   
     document.execCommand('copy')
+    copyText.setSelectionRange(0, 99999)
     
     tooltipText.textContent = 'Copied to clipboard'
 

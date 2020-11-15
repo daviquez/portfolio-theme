@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<div class="col-12 col-md-8 p-md-5 right">
+<div class="col-12 col-md-8 px-md-5 right">
     <div class="the_content container">
         <div class="row">
             <div class="col-12">
@@ -51,23 +51,23 @@
                             <li>Laravel</li>
                         </ul>
                     </div>
-                    <a href="<?php site_url('/works', ''); ?>" class="btn mb-5 mb-md-0"><?php _e('CHECK MY WORK', 'david') ?></a>
+                    <a href="<?php site_url('/works', ''); ?>" class="btn mb-md-0"><?php _e('CHECK MY WORK', 'david') ?></a>
                 </section>
                 <section class="experience fade">
                     <h2 class="font-weight-bold"><?php _e('Experience', 'david');?></h2>
                     <div class="d-lg-flex justify-content-start">
                         <ul class="mt-4 mb-0">
                             <li>
-                                <h5 class="text-bold mb-0">Broccoli Studios</h5>
-                                <p class="ml-1 text-gold"><?php _e('Web Programmer', 'david') ?></p>
+                                <h5 class="text-bold mb-0">WordPress Specialist</h5>
+                                <p class="ml-1 text-gold"><?php _e('Freelance', 'david') ?></p>
                             </li>
                             <li>
                                 <h5 class="text-bold mb-0">Accenture</h5>
                                 <p class="ml-1 text-gold"><?php _e('Training', 'david') ?></p>
                             </li>
                             <li>
-                                <h5 class="text-bold mb-0">Freelance</h5>
-                                <p class="ml-1 text-gold"><?php _e('WordPress Specialist', 'david') ?></p>
+                                <h5 class="text-bold mb-0">Broccoli Studios</h5>
+                                <p class="ml-1 text-gold"><?php _e('Web Programmer', 'david') ?></p>
                             </li>
                         </ul>
                         <ul class="ml-lg-5 mb-0">

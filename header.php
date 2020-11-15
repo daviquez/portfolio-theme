@@ -32,15 +32,12 @@
 		<div class="container">
 			<div class="content">
 				<nav class="main-menu">
-					<ul>
-						<li><a href="/davidviquez/">Home</a></li>
-						<li><a href="/davidviquez/about">About</a></li>
-						<li><a href="/davidviquez/work">Work</a></li>
-						<li><a href="/davidviquez/contact">Contact</a></li>
-					</ul>
+					<?php wp_nav_menu(array(
+						'menu' => 'top_menu'
+					)) ?>
 				</nav>
 			</div>
 		</div>
 	</section>
 
-	<main class="row pb-5 pb-md-0">
+	<main class="row pb-md-5 pb-md-0">
