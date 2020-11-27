@@ -193,9 +193,9 @@ if(discordLink){
     e.preventDefault();
 
     tooltipInput.select()
+    tooltipInput.setSelectionRange(0, 99999)
   
     document.execCommand('copy')
-    copyText.setSelectionRange(0, 99999)
     
     tooltipText.textContent = 'Copied to clipboard'
 
