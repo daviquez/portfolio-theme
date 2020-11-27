@@ -40,4 +40,4 @@
 		</div>
 	</section>
 
-	<main class="row pb-md-5 pb-md-0">
+	<main class="row pb-md-0">

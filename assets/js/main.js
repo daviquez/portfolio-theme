@@ -1,35 +1,49 @@
 const $ = jQuery
 
-$(document).ready(function(){
-  $('#home_resume').slick({
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    fade: true,
-    adaptiveHeight: true,
-    dotsClass: 'slick-dots',
-    mobileFirst: true,
-    responsive: [{
-      breakpoint: 768,
-      settings: 'unslick',
-    }]
-  })
-  $('#about_resume').slick({
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    fade: true,
-    // adaptiveHeight: true,
-    dotsClass: 'slick-dots',
-    mobileFirst: true,
-    responsive: [{
-      breakpoint: 768,
-      settings: 'unslick',
-    }]
-  })
+if(window.innerWidth <= 768 ){
+  slicks()
+}
+window.addEventListener('resize', function(){
+  if(window.innerWidth <= 768 ){
+    slicks()
+  }
 })
+function slicks(){
+  $(document).ready(function(){
+    if(!$('#home_resume').hasClass('slick-slider')){
+      $('#home_resume').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        fade: true,
+        adaptiveHeight: true,
+        dotsClass: 'slick-dots',
+        mobileFirst: true,
+        responsive: [{
+          breakpoint: 768,
+          settings: 'unslick',
+        }]
+      })
+    }
+    if(!$('#about_resume').hasClass('slick-slider')){
+      $('#about_resume').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        fade: true,
+        // adaptiveHeight: true,
+        dotsClass: 'slick-dots',
+        mobileFirst: true,
+        responsive: [{
+          breakpoint: 768,
+          settings: 'unslick',
+        }]
+      })
+    }
+  })
+}
 
 // var html = document.getElementsByTagName('html')[0]
 var body = document.getElementsByTagName('body')[0]
