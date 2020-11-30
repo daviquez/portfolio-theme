@@ -766,7 +766,7 @@ body.page-template-works footer {
   }
   #menu {
     left: 0;
-    top: -100%;
+    top: -120%;
   }
   #menu.show {
     top: 0;
